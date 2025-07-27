@@ -8,7 +8,7 @@ on:
 jobs:
   deploy-codigoFacilito: 
     runs-on: ubuntu-latest # entorno donde se va a ejecutar el job
-    steps: #pasos que se van a ejecutar
+    step: #pasos que se van a ejecutar
       run: echo "Hacemos pull del codigoFacilito"
       run: echo "Correr migraciones"
       run: echo "Generar binario"
