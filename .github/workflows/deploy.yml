@@ -8,9 +8,10 @@ on:
 jobs:
   deploy-codigoFacilito: 
     runs-on: ubuntu-latest # entorno donde se va a ejecutar el job
-    step: #pasos que se van a ejecutar
-      run: echo "Hacemos pull del codigoFacilito"
-      run: echo "Correr migraciones"
-      run: echo "Generar binario"
-      run: echo "Publicar version"
+    steps: #pasos que se van a ejecutar
+      - uses: actions/checkout@v4 # Descarga el código del repositorio de github
+      - run: echo "Hacemos pull del codigoFacilito" 
+      - run: echo "Correr migraciones" 
+      - run: echo "Generar binario" 
+      - run: echo "Publicar version" 
       
